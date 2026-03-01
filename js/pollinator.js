@@ -159,7 +159,7 @@ addLayer("pol", {
         let onepersec = new Decimal(1)
         if (hasUpgrade("i", 22)) {
             // START OF POLLINATORS
-            player.pol.pollinatorsPerSecond = player.g.grass.add(1).log(10).pow(0.75).div(3)
+            player.pol.pollinatorsPerSecond = player.g.grass.add(1).log(8).pow(0.75).div(3)
             if (hasUpgrade("pol", 12)) player.pol.pollinatorsPerSecond = player.pol.pollinatorsPerSecond.mul(upgradeEffect("pol", 12))
             player.pol.pollinatorsPerSecond = player.pol.pollinatorsPerSecond.mul(buyableEffect("pol", 12))
             if (hasUpgrade("g", 23)) player.pol.pollinatorsPerSecond = player.pol.pollinatorsPerSecond.mul(upgradeEffect("g", 23))
